@@ -6,7 +6,7 @@ module.exports =
     wrap = {}
     for l in libs
       try
-        wrap[l] = require "gulp-#{l}"
+        wrap[l] = require "../../gulp-#{l}"
       catch
         wrap[l] = require "../plugins/#{l}"
     wrap
